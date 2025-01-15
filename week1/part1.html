@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for "coursename">Your course name : <input class="course" type="text"></input></label>
+    <script>
+        alert("Hello world!");
+
+        //let userResponse = prompt("What class are you taking to learn about web programming?");
+        //alert("Hmm ... " + userResponse + " ... that's a great class! Make sure to practice!");
+        alert(document.querySelector('.course'));
+        var txtCourse = document.querySelector('.course');
+
+        txtCourse.addEventListener('focusout', (event) => { alert(txtCourse.value) } )
+    </script>
+</body>
+</html>
