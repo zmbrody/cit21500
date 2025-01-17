@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // prefix operator
+    let a = 10;
+    let b = --a * 4; // b = (a-1)*4 ; a = a-1
+    alert("a = " + a);
+    alert("b = " + b);
+    
+    // postfix operator
+    let c = 10;
+    let d = c-- * 4; // d = c*4 ; c = c-1
+    alert("c = " + c);
+    alert("d = " + d);
+
+    // interpolation
+    let firstNumber = prompt("Enter the first number : ");
+    console.log("The first number is "+firstNumber);
+    let secondNumber = prompt("Enter the second number : ");
+    console.log("The second number is "+secondNumber);
+    let product = firstNumber * secondNumber;
+    console.log("The product is "+product);
+    let productWithBacktick = `${firstNumber} X ${secondNumber} = ${product}`; // backticks create "template literals"
+    alert(productWithBacktick);
+    let productWithConcatenation =
+        firstNumber + " X " + secondNumber + " = " + product;
+    alert(productWithConcatenation);
+</script>
+</html>
