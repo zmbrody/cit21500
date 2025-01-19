@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        The grand total is $<span id="print_bill"></span>. This includes 7% tax and a 15% tip.
+    </p>
+</body>
+<script>
+    let bill = prompt("How much was the bill");
+    console.log("bill = "+bill);
+    let TaxedBill = bill*1.07;
+    console.log("TaxedBill = "+TaxedBill);
+    let tip = bill*0.15; // tip is caluclated pre-tax
+    console.log("tip"+tip)
+    let FinalBill = TaxedBill+tip;
+    console.log("FinalBill = "+ FinalBill);
+    //alert("The grand total is $"+FinalBill+". This includes 7% tax and a 15% tip.")
+    let BillToPrint = document.querySelector("#print_bill");
+    BillToPrint.innerText = FinalBill;
+</script>
+</html>
