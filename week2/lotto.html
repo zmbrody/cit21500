@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto</title>
+</head>
+<body>
+    <h1>For results</h1>
+    <h3 class="for_result"></h3>
+    <h1>While results</h1>
+    <h3 class="while_result"></h3>
+</body>
+<script>
+let ForResult = document.querySelector(".for_result");
+let WhileResult = document.querySelector(".while_result");
+
+let ForStr = "";
+for (let i = 0; i < 6; i++)
+{
+    let RandNum = Math.floor(Math.random() * 50);
+    ForStr += `${RandNum}<br/>`;
+}
+ForResult.innerHTML = ForStr;
+
+let WhileStr = "";
+let iw = 0;
+while (iw < 6)
+{
+    let RandNum = Math.floor(Math.random() * 50);
+    WhileStr += `${RandNum}<br/>`;
+    iw++;
+}
+WhileResult.innerHTML = WhileStr;
+</script>
+</html>
