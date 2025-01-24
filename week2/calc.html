@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+</body>
+<script>
+let sol = NaN; // idk how scope in if statements works in js, but just in case it's anything like C, I'm defining the solution here
+let op1 = parseFloat(prompt("Please input the first number."));
+if (!isNaN(op1))
+{
+    let operator = prompt("Please input an operator (''+'', ''-'', ''*'', ''/'')")
+    if (operator == "+" || operator == "-" || operator == "*" || operator == "/")
+    {
+        let op2 = parseFloat(prompt("Please input the second number."));
+        if (!isNaN(op2))
+        {
+            switch (operator)
+            {
+                case "+":
+                {
+                    sol = op1 + op2;
+                    break;
+                }
+                case "-":
+                {
+                    sol = op1 - op2;
+                    break;
+                }
+                case "*":
+                {
+                    sol = op1 * op2;
+                    break;
+                }
+                case "/":
+                {
+                    sol = op1 / op2;
+                    break;
+                }
+                default:
+                {
+                    break;
+                }
+            }
+            alert(`${op1} ${operator} ${op2} = ${sol}`);
+        }
+    }
+}
+if (isNaN(sol)) // tried to initialize as NULL, but apparently NULL doesn't equal false in js?
+{
+    alert("Invalid input detected.");
+}
+</script>
+</html>
