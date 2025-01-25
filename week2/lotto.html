@@ -24,7 +24,7 @@ for (let i = 0; i < 6; i++)
 ForResult.innerHTML = ForStr;
 
 let WhileStr = "";
-let iw = 0;
+let iw = 0; // we technically could reuse "i" here, but for clarity I'll use "iw" ("Iterator for While") instead
 while (iw < 6)
 {
     let RandNum = Math.floor(Math.random() * 50);
