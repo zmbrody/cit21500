@@ -12,7 +12,7 @@ const getSixNumbers = function ()
     let TheNumbers = "";
     for (let i = 0; i < 6; i++)
     {
-        let RandNum = Math.floor(Math.random() * 50);
+        let RandNum = lotteryNumber();
         console.log(RandNum);
     }
     return;
