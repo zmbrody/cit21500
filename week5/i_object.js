@@ -1,6 +1,6 @@
 const robot =
 {
-    name : "Robo",
+    robot_name : "Robo",
     manufacturer : "Manufacturer Inc.",
     skillset : 
     {
@@ -23,7 +23,7 @@ const robot =
 
 function main()
 {
-    console.log(`The robot is called ${robot.name}. It was manufactured by ${robot.manufacturer}. ` + 
+    console.log(`The robot is called ${robot.robot_name}. It was manufactured by ${robot.manufacturer}. ` + 
         `It is capable of ${robot.skillset.skill1}, ${robot.skillset.skill2}, and ${robot.skillset.skill3}.`);
     
     let UsrSkill = prompt("What skill do you want to check?")
