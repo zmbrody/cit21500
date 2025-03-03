@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js_is_animal.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <p class="petsInfo"></p>
+        <div class="petsList"></div>
+        <div class="selectPet">
+            <label for="petNum">Pet Number:</label>
+            <input type="text" id="petNum" name="petNum" maxlength="4" size="4"></input>
+            <button onclick="showInfo()">Click for information!</button>
+            <p class="selectedPetInfo"></p>
+            <img class="selectedPetPic" alt="Pet" src="images/null.png" />
+        </div>
+    </div>
+</body>
+</html>
