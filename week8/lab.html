@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrimate</title>
+    <style>
+        #park {
+            width: 1024px;
+            height: 640px;
+            position: relative;
+            background-image: url('park.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        #queen {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -500px;
+            left: -500px;
+        }
+
+        #car {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -500px;
+            left: -500px;
+        }
+
+        #owen {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -500px;
+            left: -500px;
+        }
+    </style>
+    <script src="lab.js" defer></script>
+</head>
+
+<body>
+    <p><button onclick="move()">Move It!</button>&nbsp;
+        <button onclick="stopMoving()">Stop!</button></p>
+    <div id="container">
+        <div id="park">
+        <img id="queen" src="queen/walking_e0000.png" alt="queen" />
+        <img id="car" src="car/playercar.png" alt="car" />
+    </div>
+    </div>
+</body>
+
+</html>
