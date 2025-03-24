@@ -142,7 +142,7 @@ function main()
 
     // "Worried about calories? Total damage is 930 (starter: 180; entrée : 450; dessert: 300)"
     let CalorieText = `Worried about calories? Total damage is ${thanksgivingMeal.totalCalories()}` +
-        ` (starter: ${thanksgivingMeal.caloriesFrom(1)}; entrée : "${thanksgivingMeal.caloriesFrom(2)}` +
+        ` (starter: ${thanksgivingMeal.caloriesFrom(1)}; entrée: ${thanksgivingMeal.caloriesFrom(2)}` +
         `; dessert: ${thanksgivingMeal.caloriesFrom(3)})`;
 
     GreetingHTML.innerText = GreetingText;
