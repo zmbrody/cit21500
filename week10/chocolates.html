@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../lib/jquery-3.7.1.js"></script>
+	<script src="chocolates.js"></script>
+	<style>
+		.chocolates
+		{
+			display:flex;
+		}
+		.chocolate
+		{
+			text-align: center;
+			background-color: #fffdd0;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="ToggleExtraContent()" id="toggle_button">Detailed view</button>&emsp14;
+	<button onclick="PickRandom()">Random sample</button>
+	<div class="chocolates">
+		<div>
+			<div class="chocolate" id="baileys_cup">
+				<p><img src="images/baileys_cup.jpg" alt="Bailey's Cup" width="64px" height="64px"/>
+				<br>Bailey's Cup</p>
+			</div>&emsp;
+			<div class="chocolate" id="cappuccino_cup">
+				<p><img src="images/cappuccino_cup.jpg" alt="Cappuccino Cup" width="64px" height="64px"/>
+				<br>Cappuccino Cup</p>
+			</div>&emsp;
+			<div class="chocolate" id="nutter_butter">
+				<p><img src="images/nutter_butter.jpg" alt="Nutter Butter" width="64px" height="64px"/>
+				<br>Nutter Butter</p>
+			</div>&emsp;
+			<div class="chocolate" id="orange_fondant">
+				<p><img src="images/orange_fondant.jpg" alt="Orange Fondant" width="64px" height="64px"/>
+				<br>Orange Fondant</p>
+			</div>&emsp;
+			<div class="chocolate" id="pistachio_diamond">
+				<p><img src="images/pistachio_diamond.jpg" alt="Pistachio Diamond" width="64px" height="64px"/>
+				<br>Pistachio Diamond</p>
+			</div>&emsp;
+		</div>&emsp;
+		<div>
+			<div class="chocolate" id="plain_dark">
+				<p><img src="images/plain_dark.jpg" alt="Plain Dark" width="64px" height="64px"/>
+				<br>Plain Dark</p>
+			</div>&emsp;
+			<div class="chocolate" id="plain_hybrid">
+				<p><img src="images/plain_hybrid.jpg" alt="Plain Hybrid" width="64px" height="64px"/>
+				<br>Plain Hybrid</p>
+			</div>&emsp;
+			<div class="chocolate" id="plain_milk">
+				<p><img src="images/plain_milk.jpg" alt="Plain Milk" width="64px" height="64px"/>
+				<br>Plain Milk</p>
+			</div>&emsp;
+			<div class="chocolate" id="rum_barrel">
+				<p><img src="images/rum_barrel.jpg" alt="Rum Barrel" width="64px" height="64px"/>
+				<br>Rum Barrel</p>
+			</div>&emsp;
+			<div class="chocolate" id="toffee_crunch">
+				<p><img src="images/toffee_crunch.jpg" alt="Toffee Crunch" width="64px" height="64px"/>
+				<br>Toffee Crunch</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
