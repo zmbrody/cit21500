@@ -3,39 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>LEGO Star Wars Character Data Editor</title>
 	<script src="../lib/jquery-3.7.1.js"></script>
-	<script src="jqueryinterests_db.js"></script>
-	<script src="jqueryinterests.js"></script>
-	<style>
-		body
-		{
-			background-color: black;
-			color:lightyellow;
-			font-family: sans-serif;
-		}
-		button
-		{
-			background-color: lightyellow;
-			color:black;
-			font-family: sans-serif;
-		}
-		input
-		{
-			background-color: lightyellow;
-			color:black;
-			font-family: sans-serif;
-		}
-		code
-		{
-			font-family: monospace; /* browser should do this automatically */
-			font-size: 1.3em;
-		}
-	</style>
+	<script src="final_project_db.js"></script>
+	<script src="final_project.js"></script>
+	<link rel="stylesheet" href="final_project.css"/>
 </head>
 <body>
+	<h2 id="header">
+		<img src="img/lego_star_wars_tcs_logo.webp" alt="LEGO Star Wars: The Complete Saga" width="280px" height="128px"/><br>
+		Character Data Editor
+	</h2>
 	<button id="button_create">New Character</button>
-	<div id="popup_ui">If you can read this, someone goofed. Check <code>#popup_ui</code>.</div>
-	<div id="char_list">If you can read this, someone goofed. Check <code>#char_list</code>.</div>
+	<div id="popup_ui"></div>
+	<div id="char_list"></div>
 </body>
 </html>

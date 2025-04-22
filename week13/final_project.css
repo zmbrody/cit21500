@@ -1,0 +1,40 @@
+#header
+{
+	text-align: center;
+	font-family: serif; /* consistency with logo */
+}
+#char_table
+{
+	display: flex;
+	gap: 5px;
+	flex-wrap: wrap;
+}
+body
+{
+	background-color: black;
+	color:#efe9c2;
+	font-family: sans-serif;
+}
+button
+{
+	background-color: #efe9c2;
+	color:black;
+	font-family: sans-serif;
+}
+input
+{
+	background-color: #efe9c2;
+	color:black;
+	font-family: sans-serif;
+	width: 256px;
+}
+#char_intn_name
+{
+	font-family: monospace;
+	font-size: 1.3em; /* Try to make it closer to the size of the sans-serif font */
+}
+code
+{
+	font-family: monospace; /* browser should do this automatically */
+	font-size: 1.3em; /* Try to make it closer to the size of the sans-serif font */
+}

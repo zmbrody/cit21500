@@ -1,4 +1,3 @@
-// start with stuff used for midterm for now
 const characters = 
 [
 	{
