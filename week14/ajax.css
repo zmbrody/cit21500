@@ -1,0 +1,60 @@
+/*
+	#e60012 is rgb(230, 0, 18), taken from Nintendo's website
+*/
+body
+{
+	background-color: #f8f8f8;
+}
+button
+{
+	background-color: #e60012;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 1.0625em;
+	border-radius: 8px;
+	outline-color: lightgrey;
+}
+button:hover
+{
+	background-color: #ae000e;
+}
+#title
+{
+	color:#e60012;
+	font-weight: 900;
+}
+#wrapper
+{
+	/*padding-top: 1em;*/
+	font-family: sans-serif;
+}
+#grid
+{
+	display: flex;;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+#search_parms
+{
+	line-height: .1px;
+}
+.box
+{
+	padding:5px;
+	border: 5px solid #e60012;
+	background-color: lightgrey;
+	width: 272px;
+	display: inline;
+}
+.amiibo_img
+{
+	text-align: center;
+}
+.kv_key
+{
+	font-weight: bold;
+}
+.kv_value
+{
+	font-weight: normal;
+}

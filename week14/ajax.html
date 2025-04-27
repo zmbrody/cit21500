@@ -3,11 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Amiibo Search</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="ajax.js" defer></script>
+	<link rel="stylesheet" href="ajax.css"/>
 </head>
 <body>
-	
+	<div id="wrapper">
+		<h1 id="title"><img src="img/amiibo.svg" alt="Amiibo" width="256px"/></h1>
+		<div id="search_parms">
+			<p>
+				<label for="search_value">Search</label>
+				<input id="search_value"/>
+			</p>
+			<p>
+				<label for="search_type">Search Category</label>
+				<select id="search_type" name="search_type">
+					<option value="amiiboSeries">Amiibo Series</option>
+					<option value="character">Character</option>
+					<option value="gameSeries">Game Series</option>
+					<option value="name">Name</option>
+					<option value="type">Type</option>
+				</select>
+			</p>
+			<p>
+				<button id="search_submit">Search</button>
+				<button id="search_reset">Reset</button>
+			</p>
+		</div>
+		<div id="grid"></div>
+	</div>
 </body>
 </html>
