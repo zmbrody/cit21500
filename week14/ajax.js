@@ -64,11 +64,17 @@ const GetSuccess = function(api_data,status,xhr)
 
 const GetAll = function()
 {
+	/*
+		Purpose: Grab entire database
+	*/
 	$.getJSON(API_URL_PREFIX, GetSuccess)
 }
 
 const GetSearch = function()
 {
+	/*
+		Purpose: Grab search values and search with them
+	*/
 	let search_type = $("#search_type").val();
 	let search_value = $("#search_value").val();
 	console.log("Searching for",search_type,search_value);
